@@ -2,12 +2,11 @@ package sort
 
 import "fmt"
 
-func MergeSort(array []Sort) []Sort {
+func MergeSort(array []Sort) {
 	if len(array) <= 1 {
-		return array
+		return
 	}
 	mergeSort(array, 0, len(array)-1)
-	return array
 }
 
 func mergeSort(array []Sort, left int, right int) {

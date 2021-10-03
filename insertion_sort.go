@@ -1,6 +1,6 @@
 package sort
 
-func InsertionSort(array []Sort) []Sort {
+func InsertionSort(array []Sort) {
 	for i := 1; i < len(array); i++ {
 		key := array[i]
 		j := i - 1
@@ -10,5 +10,4 @@ func InsertionSort(array []Sort) []Sort {
 		}
 		array[j+1] = key
 	}
-	return array
 }

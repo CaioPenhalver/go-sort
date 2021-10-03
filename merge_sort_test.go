@@ -26,7 +26,7 @@ func TestMergeSort(t *testing.T) {
     &MockSort{sortableValue: 298},
   }
 
-  response := MergeSort(objects)
+  MergeSort(objects)
 
-  expectArraySorted(t, expectedObjects, response)
+  expectArraySorted(t, expectedObjects, objects)
 }

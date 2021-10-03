@@ -1,6 +1,6 @@
 package sort
 
-func BubbleSort(array []Sort) []Sort {
+func BubbleSort(array []Sort) {
 	length := len(array) - 1
 
 	for i := 0; i < length; i++ {
@@ -12,6 +12,4 @@ func BubbleSort(array []Sort) []Sort {
 			}
 		}
 	}
-
-	return array
 }

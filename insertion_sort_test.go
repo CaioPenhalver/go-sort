@@ -26,7 +26,7 @@ func TestInsertionSort(t *testing.T) {
     &MockSort{sortableValue: 298},
   }
 
-	response := InsertionSort(objects)
+	InsertionSort(objects)
 
-	expectArraySorted(t, expectedObjects, response)
+	expectArraySorted(t, expectedObjects, objects)
 }

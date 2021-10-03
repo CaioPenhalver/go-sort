@@ -26,7 +26,7 @@ func TestBubbleSort(t *testing.T) {
     &MockSort{sortableValue: 298},
   }
 
-	response := BubbleSort(objects)
+	BubbleSort(objects)
 
-	expectArraySorted(t, expectedObjects, response)
+	expectArraySorted(t, expectedObjects, objects)
 }
